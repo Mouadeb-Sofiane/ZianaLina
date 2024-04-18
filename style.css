@@ -1,0 +1,29 @@
+ /*
+Theme Name: ZianaLina
+Theme URI: https://mouadeb.fr/wp-content/themes/zianalina/style.css
+Author: Sofiane MOUADEB
+Author URI: https://zianalina.fr
+Description: Thème développé par Sofiane MOUADEB pour le site ZianaLina
+Version: 1.0 
+Tags: Site web, e-commerce, vente en ligne, ZianaLina
+*/
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FCDEDC;
+  }
+
+footer {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+
+
