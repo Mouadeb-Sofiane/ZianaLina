@@ -18,9 +18,17 @@ get_header();
                 // Ajoutez autant d'images que nécessaire
             );
 
-            // Affichage de chaque image
             foreach ($images as $index => $image) {
-                echo "<img src='$image' data-index='$index'>";
+                echo "<a href='$product_details_url'><img src='$image' data-index='$index'></a>";
+            };
+
+            foreach ($products as $product) {
+                // Récupérer l'ID du produit
+                $product_id = $product->get_id();
+                // Récupérer le lien de la page produit avec l'ID du produit en tant que paramètre GET
+                $product_details_url = home_url("/produit/$product_id/");
+                // Afficher le lien vers la page produit avec le nom du produit comme texte
+                echo "<a href='$product_details_url'>" . $product->get_name() . "</a>";
             }
             ?>
         </div>
@@ -38,16 +46,65 @@ get_header();
         </div>
     </div>
     <p>test de la page accueil</p>
-        <h2>Nos produits les plus vendus</h2>
-        <?php echo do_shortcode('[products limit="7" columns="3" best_selling="true"]'); ?>
 
-        <h2>Les nouveautés</h2>
-        <?php echo do_shortcode('[products limit="7" columns="3" orderby="id" order="DESC" visibility="visible"]'); ?>
+    <h2>Nos produits les plus vendus</h2>
+        <div>
+            <?php echo do_shortcode('[products limit="3" columns="3" best_selling="true"]'); 
+            foreach ($products as $product) {
+                // Récupérer l'ID du produit
+                $product_id = $product->get_id();
+                // Récupérer le lien de la page produit avec l'ID du produit en tant que paramètre GET
+                $product_details_url = home_url("/produit/$product_id/");
+                // Afficher le lien vers la page produit avec le nom du produit comme texte
+                echo "<a href='$product_details_url'>" . $product->get_name() . "</a>";
+            }
+            ?>
+            
+        </div>
 
-        <h2>Nos différentes catégories</h2>
-        <h2>En immersion dans notre boutique</h2>
+    <h2>Les nouveautés</h2>
+        <div>
+            <?php echo do_shortcode('[products limit="3" columns="3" orderby="id" order="DESC" visibility="visible"]');
+            foreach ($products as $product) {
+    // Récupérer l'ID du produit
+    $product_id = $product->get_id();
+    // Récupérer le lien de la page produit avec l'ID du produit en tant que paramètre GET
+    $product_details_url = home_url("/produit/$product_id/");
+    // Afficher le lien vers la page produit avec le nom du produit comme texte
+    echo "<a href='$product_details_url'>" . $product->get_name() . "</a>";
+}
+ ?>
+        </div>
 
-</body>
+    <h2>Nos différentes catégories</h2>
+        <!-- Affichage de toutes les catégories WooCommerce -->
+        <?php
+        $categories = get_categories(array(
+            'taxonomy'     => 'product_cat',
+            'orderby'      => 'name',
+            'parent'       => 0,
+            'hide_empty'   => false, // Afficher également les catégories vides
+        ));
+
+        if ($categories) {
+            echo '<ul>';
+            foreach ($categories as $category) {
+                // Récupérer l'URL sans le préfixe "categorie-produit"
+                $category_link = get_term_link($category, 'product_cat');
+                // Supprimer le préfixe "categorie-produit" de l'URL
+                $category_link = str_replace('categorie-produit/', '', $category_link);
+
+                echo '<li><a href="' . $category_link . '">' . $category->name . '</a></li>';
+            }
+            echo '</ul>';
+        } else {
+            echo '<p>Aucune catégorie trouvée.</p>';
+        }
+        ?>
+
+    <h2>En immersion dans notre boutique</h2>
+        
+    </body>
 
 <?php
 get_footer();
@@ -193,6 +250,4 @@ body {
         });
     });
 
-    // Carrousel automatique
-    var interval = setInterval(nextImage, 4000);
 </script>

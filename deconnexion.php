@@ -1,19 +1,15 @@
 <?php
-/* template name: panier */
-
-get_header();
+/* Template Name: Déconnexion */
+  get_header();  
 ?>
-
 <div class="br1"></div>
-<h1>Panier</h1>
-
-<!-- Affichage du panier WooCommerce -->
-<div class="woocommerce">
-    <?php woocommerce_mini_cart(); ?>
-</div>
-
+<h1>Déconnexion</h1>
+<?php
+wp_logout();
+wp_redirect(home_url());
+exit;
+?>
 <?php get_footer(); ?>
-
 <style>
     .br1 {
         height: 120px;

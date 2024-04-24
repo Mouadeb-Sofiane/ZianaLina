@@ -1,19 +1,21 @@
 <?php
-/* template name: panier */
+/* template name: commande */
 
 get_header();
 ?>
 
 <div class="br1"></div>
-<h1>Panier</h1>
+<h1>Récapitulatif de la commande</h1>
 
-<!-- Affichage du panier WooCommerce -->
+<!-- Affichage du récapitulatif de la commande WooCommerce -->
 <div class="woocommerce">
-    <?php woocommerce_mini_cart(); ?>
+    <?php woocommerce_checkout(); ?>
 </div>
 
-<?php get_footer(); ?>
+<div class="br1"></div>
 
+
+<?php get_footer(); ?>
 <style>
     .br1 {
         height: 120px;

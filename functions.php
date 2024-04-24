@@ -1,4 +1,37 @@
 <?php 
+// Ajouter un support de fonctionnalités de thème
+add_action('after_setup_theme', 'theme_setup');
+function theme_setup()
+{
+    add_theme_support('woocommerce');
+}
+
+// Personnaliser la page d'archive des produits
+add_filter('template_include', 'custom_archive_product_template');
+function custom_archive_product_template($template)
+{
+    if (is_post_type_archive('product')) {
+        $new_template = locate_template(array('archive-produit.php'));
+        if ('' != $new_template) {
+            return $new_template;
+        }
+    }
+    return $template;
+}
+
+// Personnaliser la page individuelle des produits
+add_filter('template_include', 'custom_single_product_template');
+function custom_single_product_template($template)
+{
+    if (is_singular('product')) {
+        $new_template = locate_template(array('single-produit.php'));
+        if ('' != $new_template) {
+            return $new_template;
+        }
+    }
+    return $template;
+}
+
   function thememonsite_setup() {
     // Ajout du support pour les images mises en avant
     add_theme_support( 'post-thumbnails' );
