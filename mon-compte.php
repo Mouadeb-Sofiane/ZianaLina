@@ -20,6 +20,7 @@
         } // end if
     ?>
 </body>
+<div class="br1"></div>
 
 <?php
     get_footer();
