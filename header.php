@@ -53,7 +53,18 @@
                                     <li><a href='http://localhost/zianalina/sac-a-main/'>Sac à main</a></li>
                                 </ul>
                             </li>
-                            <li class='active'><a href='localhost/zianalina/panier'>Panier</a></li>
+
+
+                            <li class='active'>
+                                    <a href='localhost/zianalina/panier'>
+                                        <?php echo '<img loading="lazy" srcset="' . get_template_directory_uri() . '/icon/panier.svg" style="width: 20px; height: 20px;"  />';?>
+                                    </a>
+                            </li>
+                            <li class='active'>
+                                <a href='localhost/zianalina/mon-compte'>
+                                    <?php echo '<img loading="lazy" srcset="' . get_template_directory_uri() . '/icon/compte.svg" style="width: 20px; height: 20px;"  />';?>
+                                </a>
+                            </li>
                             <!-- <li><a href='#'>Masculins</a>
                                 <ul>
                                     <li><a href='#'>Formation</a>

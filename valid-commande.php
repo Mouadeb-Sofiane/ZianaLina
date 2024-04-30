@@ -1,12 +1,12 @@
 <?php
-/* template name: panier */
+/* template name: valid-commande */
     get_header();
 ?>
 
 <body>
     <div class="br1"></div>
     <h1>
-        Panier
+        Validation de la comande
     </h1>
     <?php
         if ( have_posts() ) {

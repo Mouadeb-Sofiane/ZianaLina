@@ -1,12 +1,12 @@
 <?php
-/* template name: panier */
+/* template name: mon-compte */
     get_header();
 ?>
 
 <body>
     <div class="br1"></div>
     <h1>
-        Panier
+        Mon compte
     </h1>
     <?php
         if ( have_posts() ) {
