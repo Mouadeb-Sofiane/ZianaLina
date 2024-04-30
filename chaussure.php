@@ -24,8 +24,8 @@
         height: 120px;
     }
     body {
-    margin: 0;
-    padding: 0;
-    background-color: #FCDEDC;
-  }
+        margin: 0;
+        padding: 0;
+        background-color: #FCDEDC;
+    }
 </style>

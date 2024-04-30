@@ -66,14 +66,14 @@ get_header();
         <div>
             <?php echo do_shortcode('[products limit="3" columns="3" orderby="id" order="DESC" visibility="visible"]');
             foreach ($products as $product) {
-    // Récupérer l'ID du produit
-    $product_id = $product->get_id();
-    // Récupérer le lien de la page produit avec l'ID du produit en tant que paramètre GET
-    $product_details_url = home_url("/produit/$product_id/");
-    // Afficher le lien vers la page produit avec le nom du produit comme texte
-    echo "<a href='$product_details_url'>" . $product->get_name() . "</a>";
-}
- ?>
+                // Récupérer l'ID du produit
+                $product_id = $product->get_id();
+                // Récupérer le lien de la page produit avec l'ID du produit en tant que paramètre GET
+                $product_details_url = home_url("/produit/$product_id/");
+                // Afficher le lien vers la page produit avec le nom du produit comme texte
+                echo "<a href='$product_details_url'>" . $product->get_name() . "</a>";
+            }
+            ?>        
         </div>
 
     <h2>Nos différentes catégories</h2>
