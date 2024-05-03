@@ -35,6 +35,9 @@
                             33 rue du Breuil, 70000 Vesoul
                         </p>
                     </a>
+                    
+                <div class="br2"></div>
+
                 </div>
             </div>
 
@@ -100,7 +103,7 @@
     }
 
     .footer-section {
-        flex: 1 1 200px;
+        flex: 1 1 100px;
         color: black;
     }
 
