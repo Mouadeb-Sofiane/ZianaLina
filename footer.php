@@ -10,9 +10,9 @@
                 <h3>Votre compte</h3>
                 <div class="br3"></div>
                 <div>
-                    <p class="br-sect"><a href="#">Adresse</a></p>
-                    <p><a href="#">Commandes</a></p>
-                    <p><a href="#">Détails du compte</a></p>
+                    <p class="br-sect"><a href="http://localhost/zianalina/mon-compte/edit-address/">Adresses</a></p>
+                    <p><a href="http://localhost/zianalina/mon-compte/orders/">Commandes</a></p>
+                    <p><a href="http://localhost/zianalina/mon-compte/edit-account/">Détails du compte</a></p>
                 </div>
             </div>
 
@@ -21,8 +21,8 @@
                 <div class="br3"></div>
                 <div>
                     <p><a href="mailto:lina-linoush@hotmail.fr">Me contacter</a></p>
-                    <p><a href="#">Mentions légales</a></p>
-                    <p><a href="#">Politique de confidentialité</a></p>
+                    <p><a href="http://localhost/zianalina/mentions-legales/">Mentions légales</a></p>
+                    <p><a href="http://localhost/zianalina/politique-de-confidentialite">Politique de confidentialité</a></p>
                 </div>
             </div>
 
