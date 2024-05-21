@@ -1,13 +1,10 @@
 <?php
-/* template name: panier */
+/* template name: negafa */
+
     get_header();
 ?>
-
 <body>
     <div class="br1"></div>
-    <h1>
-        Panier
-    </h1>
     <?php
         if ( have_posts() ) {
             while ( have_posts() ) {
@@ -19,13 +16,16 @@
             } // end while
         } // end if
     ?>
-</body>
+    <div class="br2"></div>
 
+</body>
 <?php
     get_footer();
 ?>
-
 <style>
+    .br2 {
+        padding-bottom: 3%;
+    }
     .br1 {
         height: 140px;
     }

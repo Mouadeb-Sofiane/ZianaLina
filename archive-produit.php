@@ -36,7 +36,7 @@ get_header();
 <?php get_footer(); ?>
 <style>
     .br1 {
-        height: 120px;
+        height: 140px;
     }
 
     body {

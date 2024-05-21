@@ -23,6 +23,7 @@
                     <p><a href="mailto:lina-linoush@hotmail.fr">Me contacter</a></p>
                     <p><a href="http://localhost/zianalina/mentions-legales/">Mentions légales</a></p>
                     <p><a href="http://localhost/zianalina/politique-de-confidentialite">Politique de confidentialité</a></p>
+                    <p><a href="http://localhost/zianalina/negefa">Contrat de Negafa</a></p>
                 </div>
             </div>
 

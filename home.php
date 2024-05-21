@@ -189,7 +189,7 @@ get_footer();
 
 
 .br1 {
-    height: 120px;
+    height: 140px;
 }
 
 body {

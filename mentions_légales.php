@@ -26,10 +26,9 @@ get_footer();
 <style>
     .center {
         text-align: center;
-        margin-bottom: 2%;
     }
     .br1 {
-        height: 120px;
+        height: 140px;
     }
     body {
     margin: 0;
@@ -82,7 +81,7 @@ p {
     font-size: 32px;
     text-align: center;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .mentions-legales-container h2 {

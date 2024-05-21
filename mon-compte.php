@@ -28,7 +28,7 @@
 
 <style>
     .br1 {
-        height: 120px;
+        height: 140px;
     }
     body {
     margin: 0;
