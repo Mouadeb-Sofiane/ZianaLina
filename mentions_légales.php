@@ -17,6 +17,7 @@
             } // end while
         } // end if
     ?>
+    <p class="br2"></p>
 </body>
 
 <?php
@@ -41,7 +42,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FCDEDC;
-    color: #333;
+    color: #000;
 }
 
 .container {
@@ -57,8 +58,13 @@ h1 {
 
 h2 {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
+
+.br2 {
+        padding-bottom: 3%;
+    }
 
 p {
     margin-bottom: 20px;

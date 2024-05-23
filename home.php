@@ -4,189 +4,120 @@ get_header();
 ?>
 
 <body>
-    <div class="br1"></div>
-    <h1 class="title_1">NEGAFA ZIANA LINA</h1>
-
-    <div class="carousel-container">
-        <div class="carousel">
-            <?php
-            // Tableau d'images
-            $images = array(
-                "https://world-schools.com/fr/wp-content/uploads/sites/13/2023/05/IMG-Academy-cover-WS.webp",
-                "https://www.tallahassee.com/gcdn/presto/2018/08/14/PTAL/6e4fff76-595d-4069-9112-cfe15dbfaa43-IMG_Stadium.jpeg?width=660&height=319&fit=crop&format=pjpg&auto=webp",
-                "https://www.hollywoodreporter.com/wp-content/uploads/2023/04/IMG-Academy-Stadium.jpg?w=1296",
-                // Ajoutez autant d'images que nécessaire
-            );
-
-            foreach ($images as $index => $image) {
-                echo "<a href='$product_details_url'><img src='$image' data-index='$index'></a>";
-            };
-
-            foreach ($products as $product) {
-                // Récupérer l'ID du produit
-                $product_id = $product->get_id();
-                // Récupérer le lien de la page produit avec l'ID du produit en tant que paramètre GET
-                $product_details_url = home_url("/produit/$product_id/");
-                // Afficher le lien vers la page produit avec le nom du produit comme texte
-                echo "<a href='$product_details_url'>" . $product->get_name() . "</a>";
-            }
-            ?>
-        </div>
-        <div class="carousel-navigation">
-            <button id="prevBtn">&#10094;</button>
-            <button id="nextBtn">&#10095;</button>
-        </div>
-        <div class="carousel-indicators">
-            <?php
-            // Affichage des indicateurs
-            foreach ($images as $index => $image) {
-                echo "<span class='indicator' data-index='$index'></span>";
-            }
-            ?>
+    <div class="full-width-image-container">
+        <?php
+        // URL de l'image à afficher en plein écran
+        $image_url = "https://world-schools.com/fr/wp-content/uploads/sites/13/2023/05/IMG-Academy-cover-WS.webp";
+        echo "<img src='$image_url' alt='Negafa Ziana Lina'>";
+        ?>
+        <div class="title-overlay">
+            <h1 class="title_1">NEGAFA ZIANA LINA</h1>
         </div>
     </div>
+    
     <p>test de la page accueil</p>
 
     <h2>Nos produits les plus vendus</h2>
-        <div>
-            <?php echo do_shortcode('[products limit="3" columns="3" best_selling="true"]'); 
-            foreach ($products as $product) {
-                // Récupérer l'ID du produit
-                $product_id = $product->get_id();
-                // Récupérer le lien de la page produit avec l'ID du produit en tant que paramètre GET
-                $product_details_url = home_url("/produit/$product_id/");
-                // Afficher le lien vers la page produit avec le nom du produit comme texte
-                echo "<a href='$product_details_url'>" . $product->get_name() . "</a>";
-            }
-            ?>
-            
-        </div>
+    <div>
+        <?php echo do_shortcode('[products limit="3" columns="3" best_selling="true"]'); ?>
+    </div>
 
     <h2>Les nouveautés</h2>
-        <div>
-            <?php echo do_shortcode('[products limit="3" columns="3" orderby="id" order="DESC" visibility="visible"]');
-            foreach ($products as $product) {
-                // Récupérer l'ID du produit
-                $product_id = $product->get_id();
-                // Récupérer le lien de la page produit avec l'ID du produit en tant que paramètre GET
-                $product_details_url = home_url("/produit/$product_id/");
-                // Afficher le lien vers la page produit avec le nom du produit comme texte
-                echo "<a href='$product_details_url'>" . $product->get_name() . "</a>";
-            }
-            ?>        
-        </div>
+    <div>
+        <?php echo do_shortcode('[products limit="3" columns="3" orderby="id" order="DESC" visibility="visible"]'); ?>
+    </div>
 
     <h2>Nos différentes catégories</h2>
-        <!-- Affichage de toutes les catégories WooCommerce -->
-        <?php
-        $categories = get_categories(array(
-            'taxonomy'     => 'product_cat',
-            'orderby'      => 'name',
-            'parent'       => 0,
-            'hide_empty'   => false, // Afficher également les catégories vides
-        ));
+    <!-- Affichage de toutes les catégories WooCommerce -->
+    <?php
+    $categories = get_categories(array(
+        'taxonomy'     => 'product_cat',
+        'orderby'      => 'name',
+        'parent'       => 0,
+        'hide_empty'   => false, // Afficher également les catégories vides
+    ));
 
-        if ($categories) {
-            echo '<ul>';
-            foreach ($categories as $category) {
-                // Récupérer l'URL sans le préfixe "categorie-produit"
-                $category_link = get_term_link($category, 'product_cat');
-                // Supprimer le préfixe "categorie-produit" de l'URL
-                $category_link = str_replace('categorie-produit/', '', $category_link);
+    // Tableau associant chaque catégorie à une URL d'image de fond
+    $category_images = array(
+        'Hijab' => get_template_directory_uri() . '/img/hijab.png',
+        'Robe' => get_template_directory_uri() . '/img/robe.png',
+        'Sac à main' => get_template_directory_uri() . '/img/sacmain.png',
+        'Bijoux Traditionnels' => get_template_directory_uri() . '/img/bijouxtrad.png',
+        'Bijoux' => get_template_directory_uri() . '/img/bijoux.png',
+        'Parfums' => get_template_directory_uri() . '/img/parfums.png',
+        'Chaussures' => get_template_directory_uri() . '/img/chaussures.png',
+        'Caftan' => get_template_directory_uri() . '/img/caftan.png',
+        'Abaya' => get_template_directory_uri() . '/img/abaya.png',
+        'Ensemble' => get_template_directory_uri() . '/img/ensemble.png',
+        'Prêt à porter' => get_template_directory_uri() . '/img/pretaporter.png',
+        'Djellaba' => get_template_directory_uri() . '/img/djellaba.png',
+        // Ajoutez autant de catégories et d'images que nécessaire
+    );
 
-                echo '<li><a href="' . $category_link . '">' . $category->name . '</a></li>';
-            }
-            echo '</ul>';
-        } else {
-            echo '<p>Aucune catégorie trouvée.</p>';
+    if ($categories) {
+        echo '<ul class="categories-grid">';
+        foreach ($categories as $category) {
+            // Récupérer l'URL sans le préfixe "categorie-produit"
+            $category_link = get_term_link($category, 'product_cat');
+            // Supprimer le préfixe "categorie-produit" de l'URL
+            $category_link = str_replace('categorie-produit/', '', $category_link);
+            // Récupérer l'image de fond associée à la catégorie
+            $image_url = isset($category_images[$category->name]) ? $category_images[$category->name] : get_template_directory_uri() . '/img/default_image.png';
+            
+            // Afficher la catégorie avec l'image de fond
+            echo '<li class="category-item">
+                    <a href="' . $category_link . '">
+                        <div class="category-image" style="background-image: url(' . $image_url . ');"></div>
+                        <div class="category-name">' . $category->name . '</div>
+                    </a>
+                  </li>';
         }
-        ?>
+        echo '</ul>';
+    } else {
+        echo '<p>Aucune catégorie trouvée.</p>';
+    }
+    ?>
 
     <h2>En immersion dans notre boutique</h2>
-        
-    </body>
+</body>
 
 <?php
 get_footer();
 ?>
 
 <style>
-   .carousel-container {
+.full-width-image-container {
     position: relative;
-    max-width: 100%; /* Largeur maximale du conteneur */
-}
-
-.carousel {
-    display: flex; /* Affichage en ligne */
-    width: 100%; /* Utiliser toute la largeur du conteneur */
-    max-width: 920px; /* Largeur maximale du carrousel */
-    margin: 0 auto;
+    width: 100%;
     overflow: hidden;
-    position: relative;
+    margin-bottom: 20px;
 }
 
-.carousel img {
-    width: 100%; /* Utiliser toute la largeur du carrousel */
-    height: auto; /* Hauteur automatique pour maintenir le ratio */
-    object-fit: cover; /* Redimensionner l'image pour remplir l'espace tout en préservant son ratio */
-    display: none; /* Cacher toutes les images par défaut */
+.full-width-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.carousel img.active {
-    display: block; /* Afficher l'image active */
-}
-
-/* Style pour les boutons de navigation */
-.carousel-navigation {
+.title-overlay {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    width: 80%;
-    left: 10%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.carousel-navigation button {
-    border: none;
-    color: black;
-    font-size: 18px;
-    cursor: pointer;
-    background-color: #fff;
-    padding: 6px 14px;
-    border-radius: 50%; /* Pour créer des cercles */
-    background-color: #f1f1f1; /* Couleur de fond des cercles */
-}
-
-/* Style pour les indicateurs */
-.carousel-indicators {
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 10px;
-}
-
-.indicator {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.indicator.active {
-    background-color: #555;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .title_1 {
     font-family: "Tenor Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center;
-    /* Ajoutez une ombre portée au texte */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* x-offset y-offset blur-radius color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
 }
-
 
 .br1 {
     height: 140px;
@@ -197,57 +128,88 @@ body {
     padding: 0;
     background-color: #FCDEDC;
 }
+
 .tenor-sans-regular {
-  font-family: "Tenor Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.category-item {
+    width: 250px;
+    background-color: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.category-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}
+
+.category-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-name {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.category-name:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .category-item {
+        width: 220px;
+    }
+}
+
+@media (max-width: 992px) {
+    .category-item {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-item {
+        width: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .category-item {
+        width: 100%;
+    }
+}
 </style>
-
-<script>
-    // JavaScript pour le carrousel automatique et la navigation manuelle
-    var currentIndex = 0;
-    var images = document.querySelectorAll('.carousel img');
-    var indicators = document.querySelectorAll('.indicator');
-    var totalImages = images.length;
-
-    function showImage(index) {
-        // Masquer toutes les images
-        images.forEach(img => img.classList.remove('active'));
-        // Afficher l'image correspondante
-        images[index].classList.add('active');
-
-        // Mettre à jour l'indicateur actif
-        indicators.forEach(indicator => indicator.classList.remove('active'));
-        indicators[index].classList.add('active');
-    }
-
-    // Afficher la première image
-    showImage(currentIndex);
-
-    // Fonction pour afficher l'image précédente
-    function prevImage() {
-        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-        showImage(currentIndex);
-    }
-
-    // Fonction pour afficher l'image suivante
-    function nextImage() {
-        currentIndex = (currentIndex + 1) % totalImages;
-        showImage(currentIndex);
-    }
-
-    // Déclencheurs pour les boutons de navigation
-    document.getElementById('prevBtn').addEventListener('click', prevImage);
-    document.getElementById('nextBtn').addEventListener('click', nextImage);
-
-    // Déclencheurs pour les indicateurs
-    indicators.forEach((indicator, index) => {
-        indicator.addEventListener('click', () => {
-            showImage(index);
-            currentIndex = index;
-        });
-    });
-
-</script>
