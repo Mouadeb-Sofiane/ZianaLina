@@ -131,6 +131,7 @@ get_footer();
     margin: 0;
     font-size: 14px; /* Ajuster la taille du prix */
     color: #333333;
+    
 }
 
 .full-width-image-container {
@@ -203,6 +204,7 @@ ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
 }
 
 .category-item a {
