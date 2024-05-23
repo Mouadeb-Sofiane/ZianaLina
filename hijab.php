@@ -41,7 +41,7 @@ get_header();
 
             $products = new WP_Query($args);
 
-            // Compteur pour afficher trois cartes par ligne
+            // Compteur pour afficher quatre cartes par ligne
             $counter = 0;
 
             // Afficher les cartes des produits avec des liens vers les détails des produits
@@ -55,8 +55,8 @@ get_header();
                     // Incrémenter le compteur
                     $counter++;
 
-                    // Si c'est la troisième carte, réinitialiser le compteur et fermer la ligne
-                    if ($counter == 4) {
+                    // Si c'est la quatrième carte, réinitialiser le compteur et fermer la ligne
+                    if ($counter == 5) {
                         echo '</div><div class="product-container">';
                         $counter = 1; // Réinitialiser le compteur à 1 pour la nouvelle ligne
                     }
@@ -64,7 +64,7 @@ get_header();
                     <div class="product-card">
                         <a href="<?php echo $product_details_url; ?>">
                             <div class="product-image">
-                                <?php the_post_thumbnail(); ?>
+                                <?php the_post_thumbnail('medium_large'); // Taille d'image 'medium_large' pour des images plus grandes ?>
                             </div>
                             <div class="product-info">
                                 <h2><?php the_title(); ?></h2>
@@ -98,6 +98,14 @@ get_footer();
         background-color: #FCDEDC;
     }
 
+    .sort-options {
+        margin: 20px;
+    }
+
+    .products {
+        margin: 20px;
+    }
+
     .product-container {
         display: flex;
         flex-wrap: wrap;
@@ -105,42 +113,66 @@ get_footer();
     }
 
     .product-card {
-        width: calc(28% - 20px); /* 3 cartes par ligne avec un espacement de 20px entre elles */
+        width: calc(23% - 20px); /* 4 cartes par ligne avec un espacement de 20px entre elles */
         border: 1px solid #ccc;
         padding: 10px;
         margin-bottom: 20px;
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .product-card:hover {
+        transform: scale(1.05); /* Effet d'agrandissement au survol */
     }
 
     .product-card a {
         text-decoration: none;
         color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .product-card .product-image {
-        margin-bottom: 10px;
+        width: 100%;
+        height: 250px; /* Augmenter la hauteur de l'image */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
         align-items: center;
+        margin-bottom: 10px;
     }
 
     .product-card img {
         max-width: 100%;
-        height: auto;
+        max-height: 100%;
+        object-fit: cover; /* S'assurer que l'image couvre tout l'espace disponible */
     }
 
     .product-card .product-info {
-        padding: 0 10px;
+        padding: 10px;
+        width: 100%;
     }
 
     .product-card h2 {
-        margin-top: 0;
+        margin: 0;
         margin-bottom: 5px;
         font-size: 18px;
+        font-weight: bold;
     }
 
     .product-card p {
         margin: 0;
+        color: #e6007e; /* Couleur du prix pour plus de visibilité */
+        font-size: 16px;
+        font-weight: bold;
     }
 </style>
 
