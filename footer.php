@@ -1,5 +1,4 @@
-<div class="ligne-grise"></div>
-<footer>
+<footer class="ligne-grise">
     <div class="footeur">
         <div class="footer-container">
             <div class="footer-section">
@@ -63,115 +62,108 @@
 <?php wp_footer(); ?>
 
 <style>
-    /* Ajoutez vos styles ici */
-    /* Les styles existants sont inclus ci-dessous pour référence */
-
     .br-sect {}
 
-    .br3 {
-        height: 25px;
-    }
+.br3 {
+    height: 25px;
+}
 
-    .br2 {
-        height: 15px;
-    }
+.br2 {
+    height: 15px;
+}
 
-    .ligne-grise {
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        /* Couleur grise avec transparence */
-        width: 99.9%;
-        /* Largeur de la ligne */
-        margin: 0;
-        /* Marge autour de la ligne */
-        /* Autres styles personnalisables */
-    }
+.ligne-grise {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 97.2%; /* Ajustez la largeur si nécessaire */
+    margin-top: auto; /* Colle en bas du contenu */
+}
 
-    footer {
-        background-color: #fff;
-        padding: 20px;
-    }
+footer {
+    background-color: #fff;
+    padding: 20px;
+}
 
-    .footeur {
-        display: flex;
-        justify-content: center;
-    }
+.footeur {
+    display: flex;
+    justify-content: center;
+}
 
-    .footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-    }
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
 
+.footer-section {
+    flex: 1 1 100px;
+    color: black;
+}
+
+.social-media-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.contact-emails p {
+    margin: 5px;
+    text-transform: lowercase;
+    padding-top: 10px;
+}
+
+.logo-link {
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    animation: ease-in 0.5s ease-in-out;
+}
+
+.logo-link:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #737373;
+}
+
+.partners-section {
+    display: flex;
+    justify-content: center;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.title-partner {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.partner-logo {
+    width: 120px;
+    height: auto;
+}
+
+.footer-credits {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
     .footer-section {
-        flex: 1 1 100px;
-        color: black;
+        flex: 1 1 100%;
+        margin-bottom: 20px;
     }
-
-    .social-media-icons img {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-    }
-
-    .contact-emails p {
-        margin: 5px;
-        text-transform: lowercase;
-        padding-top: 10px;
-    }
-
-    .logo-link {
-        width: 30px;
-        height: 30px;
-        transition: 0.3s;
-        animation: ease-in 0.5s ease-in-out;
-    }
-
-    .logo-link:hover {
-        transform: scale(1.2);
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    a:hover {
-        color: #737373;
-    }
-
-    .partners-section {
-        display: flex;
-        justify-content: center;
-    }
-
-    .partners {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .title-partner {
-        margin: 10px;
-        font-size: 18px;
-    }
-
-    .partner-logo {
-        width: 120px;
-        height: auto;
-    }
-
-    .footer-credits {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 14px;
-    }
-
-    @media screen and (max-width: 768px) {
-        .footer-section {
-            flex: 1 1 100%;
-            margin-bottom: 20px;
-        }
-    }
+}
 </style>

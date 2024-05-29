@@ -18,7 +18,7 @@
     </head>
     <body>
     <div>
-        <header>
+        <header class="ligne-grise" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
             <nav id='cssmenu'>
                 <div class="logo"><a href="http://localhost/zianalina/accueil">
                     <?php echo '<img loading="lazy" srcset="' . get_template_directory_uri() . '/img/logo-zianalina-tel.svg"  />';?></a></div>
@@ -56,70 +56,64 @@
 
 
                             <li class='active'>
-                                    <a href='localhost/zianalina/panier'>
-                                        <?php echo '<img loading="lazy" srcset="' . get_template_directory_uri() . '/icon/panier.svg" style="width: 20px; height: 20px;"  />';?>
-                                    </a>
+                                <a href='localhost/zianalina/panier' id="panier-link">
+                                    <?php echo '<img loading="lazy" srcset="' . get_template_directory_uri() . '/icon/panier.svg" style="width: 20px; height: 20px;"  />';?>
+                                </a>
+                                <span class="panier-badge" id="panier-badge"></span>
                             </li>
                             <li class='active'>
                                 <a href='localhost/zianalina/mon-compte'>
                                     <?php echo '<img loading="lazy" srcset="' . get_template_directory_uri() . '/icon/compte.svg" style="width: 20px; height: 20px;"  />';?>
                                 </a>
                             </li>
-                            <!-- <li><a href='#'>Masculins</a>
-                                <ul>
-                                    <li><a href='#'>Formation</a>
-                                        <ul>
-                                            <li><a href='http://localhost/asmb/regional-2/'>Régional 2</a></li>
-                                            <li><a href='http://localhost/asmb/departemental-4/'>Départemental 4</a></li>
-                                            <li><a href='#'>U18 R1</a></li>
-                                            <li><a href='#'>U18 Excellence</a></li>
-                                            <li><a href='#'>U16 R1</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href='#'>Pré-Formation</a>
-                                        <ul>
-                                            <li><a href='#'>U15 R1</a></li>
-                                            <li><a href='#'>U14 R1</a></li>
-                                            <li><a href='#'>U13</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href='#'>école de foot</a>
-                                        <ul>
-                                            <li><a href='#'>U11</a></li>
-                                            <li><a href='#'>U9</a></li>
-                                            <li><a href='#'>U7</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href='#'>Féminins</a>
-                                <ul>
-                                    <li><a href='#'>Formation</a>
-                                        <ul>
-                                            <li><a href='#'>U17F</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href='#'>Pré-Formation</a>
-                                        <ul>
-                                            <li><a href='#'>U15F</a></li>
-                                            <li><a href='#'>U13F</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href='#'>école de foot</a>
-                                        <ul>
-                                            <li><a href='#'>U11F</a></li>
-                                            <li><a href='#'>U8F</a></li>
-                                        </ul>
-                                    </li>
-                                </ul> -->
-                            </li> 
                         </ul>
             </nav>
-            <div class="ligne-grise"></div>
         </header>
     </div>
     </body>
 </html>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    // Simulating the presence of products in the cart
+    var productsInCart = true; // You would replace this with your actual logic to determine if there are products in the cart
+
+    // Select the panier badge element
+    var panierBadge = document.getElementById('panier-badge');
+
+    // Create a new span element for the badge
+    var badge = document.createElement('span');
+    badge.classList.add('badge');
+
+    // If there are products in the cart, show the badge
+    if (productsInCart) {
+        badge.textContent = '!'; // You can customize the content of the badge here
+    } else {
+        badge.textContent = '0'; // You can customize the content of the badge here for an empty cart
+    }
+
+    // Append the badge to the panier badge element
+    panierBadge.appendChild(badge);
+});
+
+</script>
+
+<style>
+    /* Add styles for the badge */
+    .badge {
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: -5px;
+        font-size: 12px;
+    }
+</style>
 
         <script>
         (function($) {

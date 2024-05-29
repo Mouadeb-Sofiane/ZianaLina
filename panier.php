@@ -19,12 +19,14 @@
             } // end while
         } // end if
     ?>
+   
 </body>
 
 <?php
     get_footer();
 ?>
 
+    
 <style>
     .br1 {
         height: 140px;

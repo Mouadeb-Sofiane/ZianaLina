@@ -30,6 +30,9 @@ if (isset($_GET['product_id'])) {
             <div class="product-description">
                 <?php echo $product->get_description(); ?>
             </div>
+            <div class="product-button">
+                <button class="add-to-cart-btn" onclick="addToCart(<?php echo $product_id; ?>)">Ajouter au panier</button>
+            </div>
         </div>
         <?php
     } else {
@@ -42,7 +45,19 @@ if (isset($_GET['product_id'])) {
 
 <?php get_footer(); ?>
 
+<script>
+function addToCart(productId) {
+    // Ajoutez votre logique pour ajouter le produit au panier
+    alert('Produit ' + productId + ' ajouté au panier!');
+}
+</script>
+
 <style>
+    .wc-block-cart-item__remove-link {
+    display: none;
+}
+
+
     /* Style pour la br1 (à ajuster selon vos besoins) */
     .br1 {
         height: 700px;
@@ -78,6 +93,32 @@ if (isset($_GET['product_id'])) {
         font-size: 1em;
         line-height: 1.6;
         color: #666;
+    }
+
+    .product-button {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .add-to-cart-btn {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .add-to-cart-btn:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+    }
+
+    .add-to-cart-btn:active {
+        background-color: #004494;
+        transform: translateY(0);
     }
 
     /* Responsive styles */
