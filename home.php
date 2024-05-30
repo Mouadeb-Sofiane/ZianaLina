@@ -267,4 +267,65 @@ ul {
     }
 }
 
+/* Style pour les conteneurs de produits */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Style pour les produits individuels */
+.product {
+    flex-basis: calc(28% - 20px);
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+    position: relative; /* Permet de positionner le prix par rapport à la carte */
+}
+
+/* Style pour les images de produits */
+.product img {
+    width: 70%; /* Ajuster la largeur de l'image */
+    height: auto;
+    margin-top: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Style pour les titres de produits */
+.product h3 {
+    font-size: 16px; /* Ajuster la taille du titre */
+    margin: 10px;
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style pour les prix de produits */
+.product p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    font-size: 14px; /* Ajuster la taille du prix */
+    color: #333333;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .product {
+        flex-basis: calc(50% - 20px); /* Deux produits par ligne sur des écrans plus petits */
+    }
+}
+
+@media (max-width: 576px) {
+    .product {
+        flex-basis: 100%; /* Un produit par ligne sur des écrans très petits */
+    }
+}
+
 </style>
