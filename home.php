@@ -86,6 +86,28 @@ get_footer();
 ?>
 
 <style>
+    
+    h2 {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+    a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
     /* Style pour les conteneurs de produits */
 .products {
     display: flex;

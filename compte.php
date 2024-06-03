@@ -37,6 +37,11 @@ get_footer();
 ?>
 
 <style>
+    h1 {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 2.5em;
+        }
     .br1 {
         height: 140px;
     }

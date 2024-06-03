@@ -57,7 +57,32 @@ function addToCart(productId) {
     display: none;
 }
 
+    h1, h2 {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        }
 
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+     span {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;}   
+    a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
     /* Style pour la br1 (à ajuster selon vos besoins) */
     .br1 {
         height: 700px;

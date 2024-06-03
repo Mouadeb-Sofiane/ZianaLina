@@ -31,6 +31,27 @@ get_footer();
 ?>
 
 <style>
+    h1 {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 2.5em;
+        }
+
+        h2 {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        }
+p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+    a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        
     .br2 {
         padding-bottom: 3%;
     }

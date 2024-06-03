@@ -44,4 +44,26 @@ get_header();
         padding: 0;
         background-color: #FCDEDC;
     }
+
+    h2 {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+    a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
 </style>

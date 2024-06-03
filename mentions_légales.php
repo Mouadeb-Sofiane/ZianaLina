@@ -25,6 +25,11 @@ get_footer();
 ?>
 
 <style>
+    h1 {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 2.5em;
+        }
     .center {
         text-align: center;
     }
@@ -36,14 +41,7 @@ get_footer();
     padding: 0;
     background-color: #FCDEDC;
   }
-  /* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FCDEDC;
-    color: #000;
-}
+
 
 .container {
     max-width: 800px;
@@ -124,5 +122,24 @@ p {
         font-size: 14px;
     }
 }
+h1 {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 2.5em;
 
+        }
+h2 {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        }
+p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+    a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
 </style>

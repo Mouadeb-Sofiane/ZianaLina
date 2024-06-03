@@ -13,7 +13,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <?php wp_head(); ?>
     </head>
     <body>
@@ -185,7 +190,7 @@
             margin:  0; /* Marge autour de la ligne */
             /* Autres styles personnalisables */
         }
-    *{margin:0; padding:0; text-decoration: none; font-family: 'Montserrat', sans-serif;}
+    *{margin:0; padding:0; text-decoration: none; font-family: 'Inter', sans-serif;}
     header{position:fixed; width:100%; background:#fff; z-index: 1000;}
     img{width: 80px;}
     .logo{position: relative; z-index: 123; padding: 10px; float: left; width: 15%; }

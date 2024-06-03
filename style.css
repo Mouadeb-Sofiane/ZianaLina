@@ -11,6 +11,7 @@ Tags: Site web, e-commerce, vente en ligne, ZianaLina
 header {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
 footer {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
   }
   
 

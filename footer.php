@@ -86,6 +86,7 @@ footer {
 .footeur {
     display: flex;
     justify-content: center;
+    font-family: 'Inter', sans-serif;
 }
 
 .footer-container {
@@ -158,6 +159,17 @@ a:hover {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+}
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @media screen and (max-width: 768px) {
