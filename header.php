@@ -35,7 +35,7 @@
                                 <ul>
                                     <li><a href='http://localhost/zianalina/robe/'>Robe</a></li>
                                     <li><a href='http://localhost/zianalina/ensemble/'>Ensemble</a></li>
-                                    <li><a href='http://localhost/zianalina/habillement/'>Prêt à porter</a></li>
+                                    <li><a href='http://localhost/zianalina/pret-a-porter/'>Prêt à porter</a></li>
                                 </ul>
                             </li>
                             <li><a href='#'>Traditionnel</a>
@@ -44,7 +44,7 @@
                                     <li><a href='http://localhost/zianalina/abaya/'>Abaya</a></li>
                                     <li><a href='http://localhost/zianalina/caftan/'>Caftan</a></li>
                                     <li><a href='http://localhost/zianalina/jellaba/'>Jellaba</a></li>
-                                    <li><a href='http://localhost/zianalina/bijoux_traditionnels/'>Bijoux traditionnels</a></li>
+                                    <li><a href='http://localhost/zianalina/bijoux-traditionnels/'>Bijoux traditionnels</a></li>
                                 
                                 </ul>
                             </li>

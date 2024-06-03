@@ -15,19 +15,19 @@ get_header();
         </div>
     </div>
     
-    <p>test de la page accueil</p>
-
     <h2>Nos produits les plus vendus</h2>
     <div>
         <?php echo do_shortcode('[products limit="3" columns="3" best_selling="true"]'); ?>
     </div>
 
     <h2>Les nouveautés</h2>
+    
     <div>
         <?php echo do_shortcode('[products limit="3" columns="3" orderby="id" order="DESC" visibility="visible"]'); ?>
     </div>
 
     <h2>Nos différentes catégories</h2>
+    <div class="br2"></div>
     <!-- Affichage de toutes les catégories WooCommerce -->
     <?php
     $categories = get_categories(array(
@@ -77,8 +77,17 @@ get_header();
         echo '<p>Aucune catégorie trouvée.</p>';
     }
     ?>
-
+    <div class="br2"></div>
+    <div class="br2"></div>
     <h2>En immersion dans notre boutique</h2>
+    <div class="br2"></div>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VOTRE_ID_DE_VIDEO_YOUTUBE" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p class="cent">Vidéo présentation notre boutique Ziana Lina.</p>
+
+    <div class="br2"></div>
 </body>
 
 <?php
@@ -86,7 +95,38 @@ get_footer();
 ?>
 
 <style>
-    
+    .img_boussole {
+        /* Your existing styles for the image */
+        width: 100%;
+        height: 10% ;
+    }
+    .img-container {
+        position: relative;
+    }
+    .cent {
+        text-align: center;
+    }
+ .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40%; /* Ratio d'aspect 16:9 pour la vidéo */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 5%; /* Ajustement vertical */
+    left: 5%; /* Ajustement horizontal */
+    width: 90%;
+    height: 90%;
+}
+
+    .br2 {
+        height: 50px;
+    }
     h2 {
         font-family: 'Lora', serif;
         font-weight: 700;
