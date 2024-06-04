@@ -25,49 +25,49 @@
     <div>
         <header class="ligne-grise" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
             <nav id='cssmenu'>
-                <div class="logo"><a href="http://localhost/zianalina/accueil">
+                <div class="logo"><a href="https://zianalina.mouadeb.fr/">
                     <?php echo '<img loading="lazy" srcset="' . get_template_directory_uri() . '/img/logo-zianalina-tel.svg"  />';?></a></div>
                 <div id="head-mobile"></div>
                     <div class="button"></div>
                         <ul>
-                            <li class='active'><a href='http://localhost/zianalina/la-boutique-ziana-lina/'>La boutique</a></li>
+                            <li class='active'><a href='https://zianalina.mouadeb.fr/la-boutique-ziana-lina/'>La boutique</a></li>
                             <li><a href='#'>Vetements</a>
                                 <ul>
-                                    <li><a href='http://localhost/zianalina/robe/'>Robe</a></li>
-                                    <li><a href='http://localhost/zianalina/ensemble/'>Ensemble</a></li>
-                                    <li><a href='http://localhost/zianalina/pret-a-porter/'>Prêt à porter</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/robe/'>Robe</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/ensemble/'>Ensemble</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/pret-a-porter/'>Prêt à porter</a></li>
                                 </ul>
                             </li>
                             <li><a href='#'>Traditionnel</a>
                                 <ul>
-                                    <li><a href='http://localhost/zianalina/hijab/'>Hijab</a></li>
-                                    <li><a href='http://localhost/zianalina/abaya/'>Abaya</a></li>
-                                    <li><a href='http://localhost/zianalina/caftan/'>Caftan</a></li>
-                                    <li><a href='http://localhost/zianalina/jellaba/'>Jellaba</a></li>
-                                    <li><a href='http://localhost/zianalina/special-eid/'>Spécial Eid</a></li>
-                                    <li><a href='http://localhost/zianalina/bijoux-traditionnels/'>Bijoux traditionnels</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/hijab/'>Hijab</a></li>
+                                    <li><a href='http://zianalina/abaya/'>Abaya</a></li>
+                                    <li><a href='http://zianalina/caftan/'>Caftan</a></li>
+                                    <li><a href='http://zianalina/jellaba/'>Jellaba</a></li>
+                                    <li><a href='http://zianalina/special-eid/'>Spécial Eid</a></li>
+                                    <li><a href='http://zianalina/bijoux-traditionnels/'>Bijoux traditionnels</a></li>
                                 </ul>
                             </li>
                             <li><a href='#'>Accessoires</a>
                                 <ul>
-                                <li><a href='http://localhost/zianalina/hijab/'>Hijab</a></li>
+                                <li><a href='https://zianalina.mouadeb.fr/hijab/'>Hijab</a></li>
 
-                                    <li><a href='http://localhost/zianalina/bijoux/'>Bijoux</a></li>
-                                    <li><a href='http://localhost/zianalina/parfum/'>Parfum</a></li>
-                                    <li><a href='http://localhost/zianalina/chaussure/'>Chaussures</a></li>
-                                    <li><a href='http://localhost/zianalina/sac-a-main/'>Sac à main</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr//bijoux/'>Bijoux</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/parfum/'>Parfum</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/chaussure/'>Chaussures</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/sac-a-main/'>Sac à main</a></li>
                                 </ul>
                             </li>
 
 
                             <li class='active'>
-                                <a href='localhost/zianalina/panier' id="panier-link">
+                                <a href='https://zianalina.mouadeb.fr/panier' id="panier-link">
                                     <?php echo '<img loading="lazy" srcset="' . get_template_directory_uri() . '/icon/panier.svg" style="width: 20px; height: 20px;"  />';?>
                                 </a>
                                 <span class="panier-badge" id="panier-badge"></span>
                             </li>
                             <li class='active'>
-                                <a href='localhost/zianalina/mon-compte'>
+                                <a href='https://zianalina.mouadeb.fr/mon-compte'>
                                     <?php echo '<img loading="lazy" srcset="' . get_template_directory_uri() . '/icon/compte.svg" style="width: 20px; height: 20px;"  />';?>
                                 </a>
                             </li>
