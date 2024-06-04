@@ -30,7 +30,7 @@
                 <div id="head-mobile"></div>
                     <div class="button"></div>
                         <ul>
-                            <li class='active'><a href='http://localhost/zianalina/accueil'>Accueil</a></li>
+                            <li class='active'><a href='http://localhost/zianalina/la-boutique-ziana-lina/'>La boutique</a></li>
                             <li><a href='#'>Vetements</a>
                                 <ul>
                                     <li><a href='http://localhost/zianalina/robe/'>Robe</a></li>

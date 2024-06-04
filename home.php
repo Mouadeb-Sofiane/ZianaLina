@@ -130,6 +130,7 @@ get_footer();
     h2 {
         font-family: 'Lora', serif;
         font-weight: 700;
+        margin-left: 50px;
         }
 
     p {
