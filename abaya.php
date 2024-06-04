@@ -101,7 +101,7 @@ get_footer();
     }
 
 .br1 {
-    height: 85px;
+    height: 75px;
 }
 
 body {

@@ -5,7 +5,11 @@
 
 <body>
     <p class="br1"></p>
-    <h1 class="center">La Boutique</h1>
+    <div class="img-container">
+        <div class="image-container1">
+            <img class="img_boussole" src="<?php echo get_template_directory_uri() . '/img/banniere_laboutique.svg'; ?>" alt="Image qui montre que l'on est dans la section abaya" />
+        </div>
+    </div>
     <?php
         if ( have_posts() ) {
             while ( have_posts() ) {
@@ -25,6 +29,14 @@ get_footer();
 ?>
 
 <style>
+    .img_boussole {
+        /* Your existing styles for the image */
+        width: 100%;
+        height: 10% ;
+    }
+    .img-container {
+        position: relative;
+    }
     h1 {
         font-family: 'Lora', serif;
         font-weight: 700;
@@ -34,7 +46,7 @@ get_footer();
         text-align: center;
     }
     .br1 {
-        height: 140px;
+        height: 60px;
     }
     body {
     margin: 0;
@@ -69,9 +81,6 @@ p {
 }
 
 /* Additional styles for specific elements */
-.br1 {
-    height: 120px;
-}
 
 /* Custom styles for mentions légales template */
 .mentions-legales-container {
@@ -132,7 +141,7 @@ h2 {
         font-family: 'Lora', serif;
         font-weight: 700;
         font-size: 2em;
-        
+
         }
 p {
         font-family: 'Poppins', sans-serif;
