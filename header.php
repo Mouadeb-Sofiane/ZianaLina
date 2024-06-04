@@ -44,8 +44,8 @@
                                     <li><a href='http://localhost/zianalina/abaya/'>Abaya</a></li>
                                     <li><a href='http://localhost/zianalina/caftan/'>Caftan</a></li>
                                     <li><a href='http://localhost/zianalina/jellaba/'>Jellaba</a></li>
+                                    <li><a href='http://localhost/zianalina/special-eid/'>Spécial Eid</a></li>
                                     <li><a href='http://localhost/zianalina/bijoux-traditionnels/'>Bijoux traditionnels</a></li>
-                                
                                 </ul>
                             </li>
                             <li><a href='#'>Accessoires</a>

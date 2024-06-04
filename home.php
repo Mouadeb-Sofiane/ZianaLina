@@ -4,15 +4,10 @@ get_header();
 ?>
 
 <body>
+
+    <div class="br1"></div>
     <div class="full-width-image-container">
-        <?php
-        // URL de l'image à afficher en plein écran
-        $image_url = "https://world-schools.com/fr/wp-content/uploads/sites/13/2023/05/IMG-Academy-cover-WS.webp";
-        echo "<img src='$image_url' alt='Negafa Ziana Lina'>";
-        ?>
-        <div class="title-overlay">
-            <h1 class="title_1">NEGAFA ZIANA LINA</h1>
-        </div>
+        <img src="<?php echo get_template_directory_uri() . '/img/Photo-Boutique.png'; ?>" alt="Image qui montre que l'on est dans la section abaya" />      
     </div>
     
     <h2>Nos produits les plus vendus</h2>
@@ -51,6 +46,7 @@ get_header();
         'Ensemble' => get_template_directory_uri() . '/img/ensemble.png',
         'Prêt à porter' => get_template_directory_uri() . '/img/pretaporter.png',
         'Djellaba' => get_template_directory_uri() . '/img/djellaba.png',
+        'Spécial Eid' => get_template_directory_uri() . '/img/specialeid.png',
         // Ajoutez autant de catégories et d'images que nécessaire
     );
 
@@ -231,7 +227,7 @@ get_footer();
 }
 
 .br1 {
-    height: 140px;
+    height: 60px;
 }
 
 body {
