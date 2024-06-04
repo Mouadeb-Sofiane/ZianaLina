@@ -41,11 +41,11 @@
                             <li><a href='#'>Traditionnel</a>
                                 <ul>
                                     <li><a href='https://zianalina.mouadeb.fr/hijab/'>Hijab</a></li>
-                                    <li><a href='http://zianalina/abaya/'>Abaya</a></li>
-                                    <li><a href='http://zianalina/caftan/'>Caftan</a></li>
-                                    <li><a href='http://zianalina/jellaba/'>Jellaba</a></li>
-                                    <li><a href='http://zianalina/special-eid/'>Spécial Eid</a></li>
-                                    <li><a href='http://zianalina/bijoux-traditionnels/'>Bijoux traditionnels</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/abaya/'>Abaya</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/caftan/'>Caftan</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/jellaba/'>Jellaba</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/special-eid/'>Spécial Eid</a></li>
+                                    <li><a href='https://zianalina.mouadeb.fr/bijoux-traditionnels/'>Bijoux traditionnels</a></li>
                                 </ul>
                             </li>
                             <li><a href='#'>Accessoires</a>
