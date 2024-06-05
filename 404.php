@@ -4,7 +4,7 @@
     <div class="err">4</div>
     <i class="far fa-question-circle fa-spin"></i>
     <div class="err2">4</div>
-    <div class="msg">Peut-être que cette page a été déplacée ? Supprimée ? Est en quarantaine quelque part ? N'a jamais existé en premier lieu.?<p>Allons sur  <a href="lo">la page d'accueil.</a></p></div>
+    <div class="msg">Peut-être que cette page a été déplacée ? Supprimée ? Est en quarantaine quelque part ? N'a jamais existé en premier lieu.?<p>Allons sur  <a href="https://zianalina.mouadeb.fr/">la page d'accueil.</a></p></div>
   </div>
 </body>
 <style>
