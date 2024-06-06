@@ -75,13 +75,7 @@ get_header();
     ?>
     <div class="br2"></div>
     <div class="br2"></div>
-    <h2>En immersion dans notre boutique</h2>
-    <div class="br2"></div>
-
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VOTRE_ID_DE_VIDEO_YOUTUBE" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <p class="cent">Vidéo présentation notre boutique Ziana Lina.</p>
+    
 
     <div class="br2"></div>
 </body>
