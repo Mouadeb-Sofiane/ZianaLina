@@ -75,8 +75,11 @@ get_header();
     ?>
     <div class="br2"></div>
     <div class="br2"></div>
-    
+    <h2 class="h2_">Nos horaires</h2>
+    <div class="br2"></div>
 
+    
+    <p class="cent">Notre boutique est ouverte du Mardi au Samedi, de 10h à 12h et de 14h à 19h. Nous sommes fermés le Dimanche et le Lundi.</p>    
     <div class="br2"></div>
 </body>
 
@@ -85,6 +88,10 @@ get_footer();
 ?>
 
 <style>
+    .h2_ {
+        text-align: center;
+        }
+
     .img_boussole {
         /* Your existing styles for the image */
         width: 100%;

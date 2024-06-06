@@ -19,7 +19,7 @@
                 <h3>Informations</h3>
                 <div class="br3"></div>
                 <div>
-                    <p><a href="mailto:lina-linoush@hotmail.fr">Me contacter</a></p>
+                    <p><a href="mailto:lina-linoush@hotmail.com">Me contacter</a></p>
                     <p><a href="https://zianalina.mouadeb.fr/mentions-legales/">Mentions légales</a></p>
                     <p><a href="https://zianalina.mouadeb.fr/politique-de-confidentialite">Politique de confidentialité</a></p>
                     <p><a href="https://zianalina.mouadeb.fr/negefa">Contrat de Negafa</a></p>
