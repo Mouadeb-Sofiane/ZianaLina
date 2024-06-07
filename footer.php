@@ -2,16 +2,16 @@
     <div class="footeur">
         <div class="footer-container">
             <div class="footer-section">
-                <a href="https://zianalina.mouadeb.fr/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-zianalina-tel.svg" alt="Logo Ziana Lina" ></a>
+                <a href="https://zianalina.fr/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-zianalina-tel.svg" alt="Logo Ziana Lina" ></a>
             </div>
 
             <div class="footer-section">
                 <h3>Votre compte</h3>
                 <div class="br3"></div>
                 <div>
-                    <p class="br-sect"><a href="https://zianalina.mouadeb.fr/mon-compte/edit-address/">Adresses</a></p>
-                    <p><a href="https://zianalina.mouadeb.fr/mon-compte/orders/">Commandes</a></p>
-                    <p><a href="https://zianalina.mouadeb.fr/mon-compte/edit-account/">Détails du compte</a></p>
+                    <p class="br-sect"><a href="https://zianalina.fr/mon-compte/edit-address/">Adresses</a></p>
+                    <p><a href="https://zianalina.fr/mon-compte/orders/">Commandes</a></p>
+                    <p><a href="https://zianalina.fr/mon-compte/edit-account/">Détails du compte</a></p>
                 </div>
             </div>
 
@@ -20,9 +20,9 @@
                 <div class="br3"></div>
                 <div>
                     <p><a href="mailto:lina-linoush@hotmail.com">Me contacter</a></p>
-                    <p><a href="https://zianalina.mouadeb.fr/mentions-legales/">Mentions légales</a></p>
-                    <p><a href="https://zianalina.mouadeb.fr/politique-de-confidentialite">Politique de confidentialité</a></p>
-                    <p><a href="https://zianalina.mouadeb.fr/negefa">Contrat de Negafa</a></p>
+                    <p><a href="https://zianalina.fr/mentions-legales/">Mentions légales</a></p>
+                    <p><a href="https://zianalina.fr/politique-de-confidentialite">Politique de confidentialité</a></p>
+                    <p><a href="https://zianalina.fr/negefa">Contrat de Negafa</a></p>
                 </div>
             </div>
 
